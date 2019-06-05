@@ -1,4 +1,4 @@
-import { actiontypes } from '../actions';
+import { actionTypes } from '../actions';
 
 /**
  * @function successReducer
@@ -9,7 +9,7 @@ import { actiontypes } from '../actions';
 
 export default (state=false, action = {}) => {
   switch(action.type) {
-    case(actiontypes.CORRECT_GUESS):
+    case(actionTypes.CORRECT_GUESS):
       return true;
     default:
       return state;

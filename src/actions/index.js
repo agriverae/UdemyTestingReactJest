@@ -1,4 +1,4 @@
-export const actiontypes = {
+export const actionTypes = {
     CORRECT_GUESS: 'CORRECT_GUESS',
 }
 
@@ -8,5 +8,5 @@ export const actiontypes = {
  */
 
 export function correctGuess() {
-    return { type: actiontypes.CORRECT_GUESS};
+    return { type: actionTypes.CORRECT_GUESS};
 }
