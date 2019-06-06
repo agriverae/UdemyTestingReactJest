@@ -13,12 +13,14 @@ export class UnconnectedInput extends Component {
 
     submitGuessedWord(evt){
         // don't submit form
-        console.log('hi')
         evt.preventDefault();
+        
         const guessedWord = this.inputBox.current.value;
         if(guessedWord && guessedWord.length > 0){
             this.props.guessWord(guessedWord);
         }
+
+        this.inputBox.current.value = '';
     }
 
     render() {
